@@ -7,20 +7,18 @@ test = {
         {
           'code': r"""
           >>> swap_strategy(23, 60, 5)
-          26f5762c932a578994ea1c8fc7fa6c02
-          # locked
+          5
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           >>> swap_strategy(39, 54, 5) # beneficial swap
-          962aea5f59fc55bd65ccacf4603c8f22
-          # locked
+          0
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -83,11 +81,10 @@ test = {
         {
           'code': r"""
           >>> swap_strategy(79, 88, 5) # neutral
-          26f5762c932a578994ea1c8fc7fa6c02
-          # locked
+          5
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         }
       ],
       'scored': True,

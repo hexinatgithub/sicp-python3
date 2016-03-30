@@ -1,3 +1,4 @@
+
 """The Game of Hog."""
 
 from dice import four_sided, six_sided, make_test_dice
@@ -59,6 +60,13 @@ def next_prime(n):
         p = p + 1
     return p
         
+def max_digit(n):
+    m = 0
+    while n > 0:
+        digit, n = n % 10, n // 10
+        if digit > m:
+            m = digit
+    return m
 
 def take_turn(num_rolls, opponent_score, dice=six_sided):
     """Simulate a turn rolling NUM_ROLLS dice, which may be 0 (Free Bacon).
@@ -72,17 +80,9 @@ def take_turn(num_rolls, opponent_score, dice=six_sided):
     assert num_rolls >= 0, 'Cannot roll a negative number of dice.'
     assert num_rolls <= 10, 'Cannot roll more than 10 dice.'
     assert opponent_score < 100, 'The game should be over.'
-    def max_digit(n=opponent_score):
-        m = 0
-        while n > 0:
-            digit, n = n % 10, n // 10
-            if digit > m:
-                m = digit
-        return m
-
     # BEGIN Question 2
     if num_rolls == 0: # Free Bacon
-        score = max_digit() + 1
+        score = max_digit(opponent_score) + 1
     else:
         score = roll_dice(num_rolls, dice)
 
@@ -91,18 +91,15 @@ def take_turn(num_rolls, opponent_score, dice=six_sided):
     return score
     # END Question 2
 
+def is_multiple_of_seven(n):
+    return n % 7 == 0
 
 def select_dice(score, opponent_score):
     """Select six-sided dice unless the sum of SCORE and OPPONENT_SCORE is a
     multiple of 7, in which case select four-sided dice (Hog wild).
     """
     # BEGIN Question 3
-    def is_multiple_of_seven():
-        s = score + opponent_score
-        if s % 7 == 0:
-            return True
-        return False
-    if is_multiple_of_seven():
+    if is_multiple_of_seven(score + opponent_score):
         return four_sided
     return six_sided
     # END Question 3
@@ -119,9 +116,7 @@ def is_swap(score0, score1):
         return (digit1, digit0)
     (player0_digit0, player0_digit1) = last_two_digit(score0)
     (player1_digit0, player1_digit1) = last_two_digit(score1)
-    if (player0_digit0, player0_digit1) == (player1_digit1, player1_digit0):
-        return True
-    return False
+    return (player0_digit0, player0_digit1) == (player1_digit1, player1_digit0)
     # END Question 4
 
 
@@ -175,7 +170,7 @@ def play(strategy0, strategy1, score0=0, score1=0, goal=GOAL_SCORE):
         # Piggy Back
         if get_score == 0:
             opponent_player_score = opponent_player_score + num_rolls
-        # update the score0 and score1
+        # update the scores[0] and scores[1]
         update_player_score(current_player_score + get_score, opponent_player_score)
         # Swine Swap
         if is_swap(scores[0], scores[1]):
@@ -232,9 +227,13 @@ def make_averaged(fn, num_samples=1000):
     not apply.
     """
     # BEGIN Question 6
-    "*** REPLACE THIS LINE ***"
+    def average(*args):
+        total = 0
+        for x in range(0, num_samples):
+            total = total + fn(*args)
+        return total / num_samples
+    return average
     # END Question 6
-
 
 def max_scoring_num_rolls(dice=six_sided, num_samples=1000):
     """Return the number of dice (1 to 10) that gives the highest average turn
@@ -246,7 +245,12 @@ def max_scoring_num_rolls(dice=six_sided, num_samples=1000):
     10
     """
     # BEGIN Question 7
-    "*** REPLACE THIS LINE ***"
+    m, number_dices = 0, 1
+    for x in range(1, 11):
+        average = make_averaged(roll_dice, num_samples)(x, dice)
+        if average > m:
+            m, number_dices = average, x
+    return m, number_dices
     # END Question 7
 
 
@@ -280,7 +284,7 @@ def run_experiments():
     if False:  # Change to True to test always_roll(8)
         print('always_roll(8) win rate:', average_win_rate(always_roll(8)))
 
-    if False:  # Change to True to test bacon_strategy
+    if True:  # Change to True to test bacon_strategy
         print('bacon_strategy win rate:', average_win_rate(bacon_strategy))
 
     if False:  # Change to True to test swap_strategy
@@ -290,14 +294,34 @@ def run_experiments():
 
 
 # Strategies
+def inverse_number(n):
+    return (n % 10) * 10 + (n // 10)
+
+def apply_bacon_rules(score, opponent_score):
+    # BEGIN Question 8
+    bacon = max_digit(opponent_score) + 1
+    # Hogtimus Prime rule increased to the next prime.
+    if is_prime(bacon):
+        bacon = next_prime(bacon)
+    score = score + bacon
+    return score, bacon
+
+def is_better_swap(score, opponent_score, margin):
+    return (score < opponent_score) and is_swap(score, opponent_score) and (opponent_score - score) >= margin
 
 def bacon_strategy(score, opponent_score, margin=8, num_rolls=5):
     """This strategy rolls 0 dice if that gives at least MARGIN points,
     and rolls NUM_ROLLS otherwise.
     """
-    # BEGIN Question 8
-    "*** REPLACE THIS LINE ***"
-    return 5  # Replace this statement
+    score, bacon = apply_bacon_rules(score, opponent_score)
+    # Swine Swap is test, if true then choose swap strategy.
+    if is_better_swap(score, opponent_score, bacon):
+        return 0
+    # if Swine Swap is not the case, then choose bacon
+    if bacon >= margin:
+        return 0
+    else:
+        return num_rolls
     # END Question 8
 
 
@@ -305,9 +329,12 @@ def swap_strategy(score, opponent_score, num_rolls=5):
     """This strategy rolls 0 dice when it results in a beneficial swap and
     rolls NUM_ROLLS otherwise.
     """
-    # BEGIN Question 9
-    "*** REPLACE THIS LINE ***"
-    return 5  # Replace this statement
+    score = apply_bacon_rules(score, opponent_score)[0]
+    margin = abs(score - opponent_score)
+    if is_better_swap(score, opponent_score, margin):
+        return 0
+    else:
+        return num_rolls
     # END Question 9
 
 
@@ -317,8 +344,12 @@ def final_strategy(score, opponent_score):
     *** YOUR DESCRIPTION HERE ***
     """
     # BEGIN Question 10
-    "*** REPLACE THIS LINE ***"
-    return 5  # Replace this statement
+    # change the side if nessary
+    dice = six_sided
+    if is_multiple_of_seven(score + opponent_score):
+        dice = four_sided
+    # choose the average rolls
+    
     # END Question 10
 
 
