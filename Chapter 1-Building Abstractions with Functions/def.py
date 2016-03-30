@@ -1,12 +1,10 @@
-#from doctest import testmod
-#testmod()
+def square(x):
+	return x * x
+	
+def so_slow(num):
+	x = num
+	while x > 0:
+		x = x + 1
+	return x / 0
 
-def t():
-	"""
-	>>> t()
-	5
-	"""
-	return 5
-
-#from doctest import run_docstring_examples
-#run_docstring_examples(t, globals(), True)
+square(so_slow(5))
