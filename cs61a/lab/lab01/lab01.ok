@@ -1,0 +1,24 @@
+{
+    "name": "Lab 1",
+    "endpoint": "cal/cs61a/sp16/lab01",
+    "src": [
+        "lab01.py"
+    ],
+    "tests": {
+        "tests/truthiness.py": "ok_test",
+        "tests/short_circuiting.py": "ok_test",
+        "lab01.py:both_positive": "doctest",
+        "tests/what_if.py": "ok_test",
+        "tests/loops.py": "ok_test",
+        "lab01.py:factors": "doctest",
+        "lab01.py:falling": "doctest"
+    },
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Lab 2",
+    "endpoint": "cal/cs61a/sp16/lab02",
+    "src": [
+        "lab02.py",
+        "lab02_extra.py"
+    ],
+    "tests": {
+        "tests/lambda.py": "ok_test",
+        "tests/hof.py": "ok_test",
+        "lab02.py:lambda_curry2": "doctest",
+        "lab02.py:adder": "doctest",
+        "tests/factorial_ok.py": "ok_test",
+        "tests/skip_mul_ok.py": "ok_test",
+        "lab02.py:skip_mul": "doctest",
+        "tests/count_up_ok.py": "ok_test",
+        "lab02.py:count_up": "doctest",
+        "lab02.py:gcd": "doctest",
+        "lab02_extra.py:hailstone": "doctest",
+        "lab02_extra.py:count_cond": "doctest",
+        "lab02_extra.py:cycle": "doctest",
+        "lab02_extra.py:paths": "doctest"
+    },
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}
