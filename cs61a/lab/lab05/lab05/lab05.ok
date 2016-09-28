@@ -1,0 +1,30 @@
+{
+    "name": "Lab 5",
+    "endpoint": "cal/cs61a/su16/lab05",
+    "src": [
+        "lab05.py",
+        "lab05_extra.py"
+    ],
+    "tests": {
+        "tests/lists.py:": "ok_test",
+        "lab05.py:coords": "doctest",
+        "lab05.py:is_sorted": "doctest",
+        "lab05_extra.py:sum_linked_list": "doctest",
+        "lab05_extra.py:change": "doctest",
+        "lab05_extra.py:link_to_list": "doctest",
+        "lab05_extra.py:insert": "doctest",
+        "lab05_extra.py:interleave": "doctest",
+        "lab05_extra.py:filter_list": "doctest",
+        "lab05_extra.py:reverse_iterative": "doctest",
+        "lab05_extra.py:reverse_recursive": "doctest",
+        "lab05_extra.py:kth_last": "doctest"
+    },
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

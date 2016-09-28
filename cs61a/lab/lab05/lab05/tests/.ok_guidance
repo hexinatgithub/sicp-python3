@@ -1,0 +1,1472 @@
+{
+  "checksum": "93e9e30011d07f18b14277eb9b66db71",
+  "db": {
+    "dictAssessId2Info": {
+      ">>> [x*x for x in range(5)]\nLOCKED_ANSWER\n>>> [n for n in range(10) if n % 2 == 0]\nLOCKED_ANSWER\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\nLOCKED_ANSWER\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n": {
+        "assessNum": "0",
+        "dictWA2DictInfo": {
+          "['0 1 4 9 16 25']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "lstdsntneedcommas-pythonlistsyntax": "6",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "lstdsntneedcommas": "11",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "lstdsntneedcommas",
+              "lstdsntneedcommas-pythonlistsyntax",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['0 1 4 9 16']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "lstdsntneedcommas-pythonlistsyntax": "6"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "lstdsntneedcommas": "11"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "lstdsntneedcommas",
+              "lstdsntneedcommas-pythonlistsyntax"
+            ]
+          },
+          "['0']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4",
+              "lstcomprtnfirstval-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8",
+              "lstcomprtnfirstval": "10"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp",
+              "lstcomprtnfirstval",
+              "lstcomprtnfirstval-listcomp"
+            ]
+          },
+          "['0, 1, 4, 9, 16']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax"
+            ]
+          },
+          "['0, 1, 4, 9, 16, 25']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['0,1,4,9,16']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax"
+            ]
+          },
+          "['1 4 9 16 25']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "lstdsntneedcommas-pythonlistsyntax": "6",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "lstdsntneedcommas": "11",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "lstdsntneedcommas",
+              "lstdsntneedcommas-pythonlistsyntax",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['1 4 9 16']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "lstdsntneedcommas-pythonlistsyntax": "6",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "lstdsntneedcommas": "11",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "lstdsntneedcommas",
+              "lstdsntneedcommas-pythonlistsyntax",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4",
+              "lstcomprtnfirstval-listcomp": "4",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8",
+              "lstcomprtnfirstval": "10",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp",
+              "lstcomprtnfirstval",
+              "lstcomprtnfirstval-listcomp",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['1, 4, 9, 16']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['1, 4, 9, 16, 25']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['1,4,9,16']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "6",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "11",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['120']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['16']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4",
+              "lstcomprtnlastval-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8",
+              "lstcomprtnlastval": "10"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp",
+              "lstcomprtnlastval",
+              "lstcomprtnlastval-listcomp"
+            ]
+          },
+          "['2']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['24']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['25']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4",
+              "lstcomprtnlastval-listcomp": "4",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8",
+              "lstcomprtnlastval": "10",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp",
+              "lstcomprtnlastval",
+              "lstcomprtnlastval-listcomp",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['3']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['30']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['4']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['5']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4",
+              "lstcomprtnlastval-listcomp": "4",
+              "rangeisweird-range": "7",
+              "sloppyarith-sloppy": "2"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8",
+              "lstcomprtnlastval": "10",
+              "rangeisweird": "9",
+              "sloppyarith": "12"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp",
+              "lstcomprtnlastval",
+              "lstcomprtnlastval-listcomp",
+              "rangeisweird",
+              "rangeisweird-range",
+              "sloppyarith",
+              "sloppyarith-sloppy"
+            ]
+          },
+          "['9']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['[0 1 4 9 16]']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedcommas-pythonlistsyntax": "6"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedcommas": "11"
+            },
+            "lstMisU": [
+              "lstdsntneedcommas",
+              "lstdsntneedcommas-pythonlistsyntax"
+            ]
+          },
+          "['[0, 1, 4, 27, 256]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyarith-sloppy": "2"
+            },
+            "dictTag2KIMsg": {
+              "sloppyarith": "12"
+            },
+            "lstMisU": [
+              "sloppyarith",
+              "sloppyarith-sloppy"
+            ]
+          },
+          "['[0, 1, 4, 9, 16, 25]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[0, 1, 4, 9]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[0,1,4,9,16,25]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[0,1,4,9]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[0]']": {
+            "dictTag2ConceptMsg": {
+              "lstcomprtnfirstval-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcomprtnfirstval": "10"
+            },
+            "lstMisU": [
+              "lstcomprtnfirstval",
+              "lstcomprtnfirstval-listcomp"
+            ]
+          },
+          "['[1, 4, 9, 16, 25]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[1, 4, 9, 16]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[1,4,9,16,25]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[1,4,9,16]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[16]']": {
+            "dictTag2ConceptMsg": {
+              "lstcomprtnlastval-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcomprtnlastval": "10"
+            },
+            "lstMisU": [
+              "lstcomprtnlastval",
+              "lstcomprtnlastval-listcomp"
+            ]
+          },
+          "['[25]']": {
+            "dictTag2ConceptMsg": {
+              "lstcomprtnlastval-listcomp": "4",
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "lstcomprtnlastval": "10",
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "lstcomprtnlastval",
+              "lstcomprtnlastval-listcomp",
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['0']": [
+            [
+              "0",
+              "['1,4,9,16,25']"
+            ],
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['[5]']"
+            ],
+            [
+              "2",
+              "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']"
+            ],
+            [
+              "2",
+              "['[]']"
+            ]
+          ],
+          "['0,1,4,9,16']": [
+            [
+              "0",
+              "['0,1,4,9,16,25']"
+            ],
+            [
+              "0",
+              "['1,4,9,16,25']"
+            ],
+            [
+              "3",
+              "['[7,8]']"
+            ]
+          ],
+          "['0,1,4,9,16,25']": [
+            [
+              "0",
+              "['0,1,4,9,16']"
+            ],
+            [
+              "0",
+              "['25']"
+            ]
+          ],
+          "['1']": [
+            [
+              "0",
+              "['1,4,9,16,25']"
+            ],
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['[0,1,4,9,25]']"
+            ],
+            [
+              "0",
+              "['[1]']"
+            ],
+            [
+              "0",
+              "['[5]']"
+            ],
+            [
+              "2",
+              "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']"
+            ]
+          ],
+          "['1,4,9,16']": [
+            [
+              "0",
+              "['1,4,9,16,25']"
+            ]
+          ],
+          "['1,4,9,16,25']": [
+            [
+              "0",
+              "['0']"
+            ],
+            [
+              "0",
+              "['0,1,4,9,16']"
+            ],
+            [
+              "0",
+              "['1']"
+            ],
+            [
+              "0",
+              "['1,4,9,16']"
+            ]
+          ],
+          "['10']": [
+            [
+              "0",
+              "['0']"
+            ],
+            [
+              "0",
+              "['1']"
+            ],
+            [
+              "0",
+              "['16']"
+            ],
+            [
+              "0",
+              "['2']"
+            ],
+            [
+              "0",
+              "['25']"
+            ],
+            [
+              "0",
+              "['3']"
+            ],
+            [
+              "0",
+              "['30']"
+            ],
+            [
+              "0",
+              "['4']"
+            ],
+            [
+              "0",
+              "['5']"
+            ],
+            [
+              "0",
+              "['9']"
+            ]
+          ],
+          "['16']": [
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "2",
+              "[\"['6','3','8','4']\"]"
+            ]
+          ],
+          "['2']": [
+            [
+              "0",
+              "['10']"
+            ]
+          ],
+          "['25']": [
+            [
+              "0",
+              "['0,1,4,9,16,25']"
+            ],
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['55']"
+            ],
+            [
+              "0",
+              "['[1]']"
+            ],
+            [
+              "0",
+              "['[5]']"
+            ],
+            [
+              "0",
+              "['error']"
+            ],
+            [
+              "2",
+              "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']"
+            ],
+            [
+              "2",
+              "['[]']"
+            ],
+            [
+              "3",
+              "['[7,8]']"
+            ]
+          ],
+          "['3']": [
+            [
+              "0",
+              "['10']"
+            ]
+          ],
+          "['30']": [
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['55']"
+            ]
+          ],
+          "['4']": [
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['[5]']"
+            ]
+          ],
+          "['5']": [
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['[5]']"
+            ]
+          ],
+          "['55']": [
+            [
+              "0",
+              "['25']"
+            ],
+            [
+              "0",
+              "['30']"
+            ]
+          ],
+          "['9']": [
+            [
+              "0",
+              "['10']"
+            ]
+          ],
+          "['[0, 1, 4, 9, 16, 25]']": [
+            [
+              "2",
+              "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']"
+            ],
+            [
+              "2",
+              "['[1, 1, 1, 1]']"
+            ]
+          ],
+          "['[0,1,4,9,25]']": [
+            [
+              "0",
+              "['1']"
+            ],
+            [
+              "0",
+              "['[0,1,4,9]']"
+            ]
+          ],
+          "['[0,1,4,9]']": [
+            [
+              "0",
+              "['[0,1,4,9,25]']"
+            ]
+          ],
+          "['[0]']": [
+            [
+              "0",
+              "['[5]']"
+            ]
+          ],
+          "['[1, 4, 9, 16, 25, 36]']": [
+            [
+              "0",
+              "['[1, 4, 9, 16, 25]']"
+            ]
+          ],
+          "['[1, 4, 9, 16, 25]']": [
+            [
+              "0",
+              "['[1, 4, 9, 16, 25, 36]']"
+            ],
+            [
+              "2",
+              "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']"
+            ],
+            [
+              "2",
+              "['[1, 1, 1, 1]']"
+            ]
+          ],
+          "['[1]']": [
+            [
+              "0",
+              "['1']"
+            ],
+            [
+              "0",
+              "['25']"
+            ],
+            [
+              "0",
+              "['[25]']"
+            ]
+          ],
+          "['[25]']": [
+            [
+              "0",
+              "['[1]']"
+            ],
+            [
+              "0",
+              "['[5]']"
+            ],
+            [
+              "2",
+              "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']"
+            ]
+          ],
+          "['[5]']": [
+            [
+              "0",
+              "['0']"
+            ],
+            [
+              "0",
+              "['1']"
+            ],
+            [
+              "0",
+              "['25']"
+            ],
+            [
+              "0",
+              "['4']"
+            ],
+            [
+              "0",
+              "['5']"
+            ],
+            [
+              "0",
+              "['[0]']"
+            ],
+            [
+              "0",
+              "['[25]']"
+            ]
+          ],
+          "['error']": [
+            [
+              "0",
+              "['25']"
+            ],
+            [
+              "2",
+              "['[1]']"
+            ]
+          ]
+        }
+      },
+      ">>> [x*x for x in range(5)]\n[0, 1, 4, 9, 16]\n>>> [n for n in range(10) if n % 2 == 0]\nLOCKED_ANSWER\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\nLOCKED_ANSWER\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n": {
+        "assessNum": "1",
+        "dictWA2DictInfo": {
+          "['[0, 2, 4, 6, 8, 10]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[0, 2, 4, 8]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyarith-sloppy": "2"
+            },
+            "dictTag2KIMsg": {
+              "sloppyarith": "12"
+            },
+            "lstMisU": [
+              "sloppyarith",
+              "sloppyarith-sloppy"
+            ]
+          },
+          "['[0,2,4,6,8,10]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[2, 4, 6, 8, 10]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[2, 4, 6, 8]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[2,4,6,8,10]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[2,4,6,8]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {}
+      },
+      ">>> [x*x for x in range(5)]\n[0, 1, 4, 9, 16]\n>>> [n for n in range(10) if n % 2 == 0]\n[0, 2, 4, 6, 8]\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\nLOCKED_ANSWER\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n": {
+        "assessNum": "2",
+        "dictWA2DictInfo": {
+          "[\"[1,1,1,'i','i','i','i']\"]": {
+            "dictTag2ConceptMsg": {
+              "bindvartovarname-assignment": "0",
+              "bindvartovarname-evalvar": "1"
+            },
+            "dictTag2KIMsg": {
+              "bindvartovarname": "15"
+            },
+            "lstMisU": [
+              "bindvartovarname",
+              "bindvartovarname-assignment",
+              "bindvartovarname-evalvar"
+            ]
+          },
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "lstcompnotrtnlst-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcompnotrtnlst": "8"
+            },
+            "lstMisU": [
+              "lstcompnotrtnlst",
+              "lstcompnotrtnlst-listcomp"
+            ]
+          },
+          "['[1, 1, 1, 6, 3, 8, 4]']": {
+            "dictTag2ConceptMsg": {
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[1, 1, 1, i, i, i, i]']": {
+            "dictTag2ConceptMsg": {
+              "bindvartovarname-assignment": "0",
+              "bindvartovarname-evalvar": "1"
+            },
+            "dictTag2KIMsg": {
+              "bindvartovarname": "15"
+            },
+            "lstMisU": [
+              "bindvartovarname",
+              "bindvartovarname-assignment",
+              "bindvartovarname-evalvar"
+            ]
+          },
+          "['[1, 6, 3, 8, 4]']": {
+            "dictTag2ConceptMsg": {
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[1,1,1,6,3,8,4]']": {
+            "dictTag2ConceptMsg": {
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[1,6,3,8,4]']": {
+            "dictTag2ConceptMsg": {
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[16, 13, 18, 14]']": {
+            "dictTag2ConceptMsg": {
+              "lstconcatiszipmap-listconcat": "5"
+            },
+            "dictTag2KIMsg": {
+              "lstconcatiszipmap": "14"
+            },
+            "lstMisU": [
+              "lstconcatiszipmap",
+              "lstconcatiszipmap-listconcat"
+            ]
+          },
+          "['[16, 13, 18, 4]']": {
+            "dictTag2ConceptMsg": {
+              "lstconcatiszipmap-listconcat": "5"
+            },
+            "dictTag2KIMsg": {
+              "lstconcatiszipmap": "14"
+            },
+            "lstMisU": [
+              "lstconcatiszipmap",
+              "lstconcatiszipmap-listconcat"
+            ]
+          },
+          "['[1]']": {
+            "dictTag2ConceptMsg": {
+              "lstcomprtnfirstval-listcomp": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstcomprtnfirstval": "10"
+            },
+            "lstMisU": [
+              "lstcomprtnfirstval",
+              "lstcomprtnfirstval-listcomp"
+            ]
+          },
+          "['[6, 3, 8, 4]']": {
+            "dictTag2ConceptMsg": {
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[6,3,8,4]']": {
+            "dictTag2ConceptMsg": {
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[7, 4, 9, 4]']": {
+            "dictTag2ConceptMsg": {
+              "lstconcatiszipmap-listconcat": "5",
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "lstconcatiszipmap": "14",
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "lstconcatiszipmap",
+              "lstconcatiszipmap-listconcat",
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[7, 4, 9, 5]']": {
+            "dictTag2ConceptMsg": {
+              "lstconcatiszipmap-listconcat": "5",
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "lstconcatiszipmap": "14",
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "lstconcatiszipmap",
+              "lstconcatiszipmap-listconcat",
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          },
+          "['[7,4,9,5]']": {
+            "dictTag2ConceptMsg": {
+              "lstconcatiszipmap-listconcat": "5",
+              "strdsntneedquotes-stringsyntax": "3"
+            },
+            "dictTag2KIMsg": {
+              "lstconcatiszipmap": "14",
+              "strdsntneedquotes": "13"
+            },
+            "lstMisU": [
+              "lstconcatiszipmap",
+              "lstconcatiszipmap-listconcat",
+              "strdsntneedquotes",
+              "strdsntneedquotes-stringsyntax"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "[\"['6','3','8','4']\"]": [
+            [
+              "0",
+              "['16']"
+            ],
+            [
+              "2",
+              "['[\"6\",\"3\",\"8\",\"4\"]']"
+            ],
+            [
+              "2",
+              "['[6,3,8,4]']"
+            ]
+          ],
+          "['1']": [
+            [
+              "2",
+              "['6']"
+            ],
+            [
+              "2",
+              "['hi']"
+            ]
+          ],
+          "['6']": [
+            [
+              "2",
+              "['1']"
+            ]
+          ],
+          "['[\"6\",\"3\",\"8\",\"4\"]']": [
+            [
+              "2",
+              "[\"['6','3','8','4']\"]"
+            ]
+          ],
+          "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']": [
+            [
+              "0",
+              "['0']"
+            ],
+            [
+              "0",
+              "['1']"
+            ],
+            [
+              "0",
+              "['25']"
+            ],
+            [
+              "0",
+              "['[0, 1, 4, 9, 16, 25]']"
+            ],
+            [
+              "0",
+              "['[1, 4, 9, 16, 25]']"
+            ],
+            [
+              "0",
+              "['[25]']"
+            ],
+            [
+              "2",
+              "['[1, 1, 1, 6, 3, 8, 4]']"
+            ]
+          ],
+          "['[1, \"6\", \"3\", \"8\", \"4\"]']": [
+            [
+              "2",
+              "['[1, 6, 3, 8, 4]']"
+            ]
+          ],
+          "['[1, 1, 1, \"i\", \"i\", \"i\", \"i\"]']": [
+            [
+              "2",
+              "['[1, 1, 1, i, i, i, i]']"
+            ]
+          ],
+          "['[1, 1, 1, 1]']": [
+            [
+              "0",
+              "['[0, 1, 4, 9, 16, 25]']"
+            ],
+            [
+              "0",
+              "['[1, 4, 9, 16, 25]']"
+            ]
+          ],
+          "['[1, 1, 1, 6, 3, 8, 4]']": [
+            [
+              "2",
+              "['[\"hi\", \"bye\", \"you\", 6, 3, 8, 4]']"
+            ],
+            [
+              "2",
+              "['[1, 1, 1, 6384]']"
+            ],
+            [
+              "2",
+              "['[1, 1, 1, [6, 3, 8, 4]]']"
+            ]
+          ],
+          "['[1, 1, 1, 6384]']": [
+            [
+              "2",
+              "['[1, 1, 1, 6, 3, 8, 4]']"
+            ]
+          ],
+          "['[1, 1, 1, [6, 3, 8, 4]]']": [
+            [
+              "2",
+              "['[1, 1, 1, 6, 3, 8, 4]']"
+            ]
+          ],
+          "['[1, 1, 1, i, i, i, i]']": [
+            [
+              "2",
+              "['[1, 1, 1, \"i\", \"i\", \"i\", \"i\"]']"
+            ]
+          ],
+          "['[1, 1, 1] + [6, 3, 8, 4]']": [
+            [
+              "2",
+              "['[7, 4, 9, 4]']"
+            ]
+          ],
+          "['[1, 1, 1] [6, 3, 8, 4]']": [
+            [
+              "2",
+              "['[6, 3, 8, 4]']"
+            ]
+          ],
+          "['[1, 6, 3, 8, 4]']": [
+            [
+              "2",
+              "['[1, \"6\", \"3\", \"8\", \"4\"]']"
+            ]
+          ],
+          "['[1]']": [
+            [
+              "0",
+              "['error']"
+            ]
+          ],
+          "['[6, 3, 8, 4]']": [
+            [
+              "2",
+              "['[1, 1, 1] [6, 3, 8, 4]']"
+            ]
+          ],
+          "['[6,3,8,4]']": [
+            [
+              "2",
+              "[\"['6','3','8','4']\"]"
+            ]
+          ],
+          "['[7, 4, 9, 4]']": [
+            [
+              "2",
+              "['[1, 1, 1] + [6, 3, 8, 4]']"
+            ]
+          ],
+          "['[7,4,9,4]']": [
+            [
+              "2",
+              "['[7,4,9,5]']"
+            ]
+          ],
+          "['[7,4,9,5]']": [
+            [
+              "2",
+              "['[7,4,9,4]']"
+            ]
+          ],
+          "['[]']": [
+            [
+              "0",
+              "['0']"
+            ],
+            [
+              "0",
+              "['25']"
+            ]
+          ],
+          "['hi']": [
+            [
+              "2",
+              "['1']"
+            ]
+          ]
+        }
+      },
+      ">>> [x*x for x in range(5)]\n[0, 1, 4, 9, 16]\n>>> [n for n in range(10) if n % 2 == 0]\n[0, 2, 4, 6, 8]\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\n[1, 1, 1, '6', '3', '8', '4']\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n": {
+        "assessNum": "3",
+        "dictWA2DictInfo": {
+          "['[5, 6, 7, 8]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[5, 6, 7]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[5,6,7,8]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[6, 7, 8, 9]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          },
+          "['[6,7,8,9]']": {
+            "dictTag2ConceptMsg": {
+              "rangeisweird-range": "7"
+            },
+            "dictTag2KIMsg": {
+              "rangeisweird": "9"
+            },
+            "lstMisU": [
+              "rangeisweird",
+              "rangeisweird-range"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['[7,8]']": [
+            [
+              "0",
+              "['0,1,4,9,16']"
+            ],
+            [
+              "0",
+              "['25']"
+            ]
+          ]
+        }
+      }
+    },
+    "dictAssessNum2AssessId": {
+      "0": ">>> [x*x for x in range(5)]\nLOCKED_ANSWER\n>>> [n for n in range(10) if n % 2 == 0]\nLOCKED_ANSWER\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\nLOCKED_ANSWER\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n",
+      "1": ">>> [x*x for x in range(5)]\n[0, 1, 4, 9, 16]\n>>> [n for n in range(10) if n % 2 == 0]\nLOCKED_ANSWER\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\nLOCKED_ANSWER\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n",
+      "2": ">>> [x*x for x in range(5)]\n[0, 1, 4, 9, 16]\n>>> [n for n in range(10) if n % 2 == 0]\n[0, 2, 4, 6, 8]\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\nLOCKED_ANSWER\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n",
+      "3": ">>> [x*x for x in range(5)]\n[0, 1, 4, 9, 16]\n>>> [n for n in range(10) if n % 2 == 0]\n[0, 2, 4, 6, 8]\n>>> ones = [1 for i in [\"hi\", \"bye\", \"you\"]]\n>>> ones + [str(i) for i in [6, 3, 8, 4]]\n[1, 1, 1, '6', '3', '8', '4']\n>>> [i+5 for i in [n for n in range(1,4)]]\nLOCKED_ANSWER\n"
+    },
+    "dictId2Msg": {
+      "0": "An assignment statement first evaluates the expression on the right side of the\n|=| operator to get a value. This value is then bound to the name on the left\nside of the |=| in the first frame in the current environment. For example,\nwhile |a = 0| displays nothing, |a == 0| displays |True|. Notice that Python\ndistinguishes assignment |=| from equality comparison |==|.",
+      "1": "A variable is evaluated to the value it was assigned. If it was not assigned\nprior to being evaluated a NameError is raised.",
+      "10": "Is that the only value the list comprehension returns?",
+      "11": "Is that a list? Python can't tell that it is.",
+      "12": "Hmm... The math doesn't seem to add up.",
+      "13": "How does Python know whether a value is an integer or string?",
+      "14": "Remember the result when concatenating lists together with |+|.",
+      "15": "Hmm... What is the variable bound to?",
+      "2": "Try:\n1) Reading the code or instructions more carefully,\n2) Writing out the variable's values, or\n3) Drawing an environment diagram.",
+      "3": "In Python, a string is a series of characters. We declare something as a string\nby surrounding it with either single |''| or double quotes |\"\"|. We can\nrecognize strings in the Python interpreter by these quotes. For example: 'This\nis a string' and \"This string's contents has an apostrophe\".",
+      "4": "Concatenation is creating a new list from multiple lists, ordering the elements\nby the order of the lists that were summed together. \nFor example, |[3, 'two', 1] + [] + [4, 3]| results in |[3, 'two', 1, 4, 3]|",
+      "5": "Concatenation is creating a new list from multiple lists, ordering the elements\nby the order of the lists that were summed together.  For example: |[3, 'two',\n1] + [] + [4, 3]| results in |[3, 'two', 1, 4, 3]|",
+      "6": "A list in Python is contained within square brackets and separated by commas.\nThe elements in the list can be be of any type, including sub-lists. For\nexample: |[1, 2.0, [3, 4], \u20185\u2019, True]|.",
+      "7": "In Python, |range(START, STOP)| is used as a means of creating a sequence of\nintegers that begins on START and ends right before STOP, incrementing by 1. If\na START value is not given, START is set to 0. For example, |range(-1, 3)|\niterates through -1, 0, 1, and 2, while |range(3)| iterates through 0, 1, and 2.",
+      "8": "Hmm...isn't this a list comprehension? What is the type of its return value?",
+      "9": "Remember what the start and end values are for |range|, given its argument(s)."
+    },
+    "dictTg2Func": {
+      "0": "none",
+      "1": "tag2ConceptMsg",
+      "2": "tag2KIMsg"
+    },
+    "wrongAnsThresh": 2
+  }
+}
