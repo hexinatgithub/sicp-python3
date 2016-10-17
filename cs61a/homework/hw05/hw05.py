@@ -21,7 +21,20 @@ def make_withdraw(balance, password):
     >>> w(10, 'l33t')
     "Your account is locked. Attempts: ['hwat', 'a', 'n00b']"
     """
-    "*** YOUR CODE HERE ***"
+    incorrect_password = []
+    def withdraw(amount, pw=""):
+        nonlocal balance
+        if len(incorrect_password) == 3:
+            return "Your account is locked. Attempts: " + str(incorrect_password)
+        elif pw != password:
+            incorrect_password.append(pw)
+            return "Incorrect password"
+        else:
+            if amount > balance:
+                return 'Insufficient funds'
+            balance = balance - amount
+            return balance
+    return withdraw
 
 def make_joint(withdraw, old_password, new_password):
     """Return a password-protected withdraw function that has joint access to
@@ -61,7 +74,16 @@ def make_joint(withdraw, old_password, new_password):
     >>> make_joint(w, 'hax0r', 'hello')
     "Your account is locked. Attempts: ['my', 'secret', 'password']"
     """
-    "*** YOUR CODE HERE ***"
+    answer = withdraw(0, old_password)
+    if type(answer) == str:
+        return answer
+    else:
+        def withdraw_new(amount,password):
+            if password == old_password or password == new_password:
+                return withdraw(amount,old_password)
+            else:
+                return withdraw(amount,password) 
+        return withdraw_new
 
 class VendingMachine:
     """A vending machine that vends some product for some price.
@@ -88,7 +110,30 @@ class VendingMachine:
     >>> v.deposit(15)
     'Machine is out of stock. Here is your $15.'
     """
-    "*** YOUR CODE HERE ***"
+    def __init__(self, name, price):
+        self.name   = name
+        self.price  = price
+        self.amount = 0
+        self.balance = 0
+    def vend(self):
+        if self.amount == 0:
+            return 'Machine is out of stock.'
+        elif self.balance < self.price:
+            return 'You must deposit $%d more.' % (self.price - self.balance)
+        else:
+            left = self.balance - self.price
+            self.balance = 0
+            self.amount -= 1
+            return "Here is your " + self.name + ((" and $%d change." % left) if left else ".")
+    def restock(self, amount):
+        self.amount = self.amount + amount
+        return 'Current ' + self.name + ' stock: %d' % self.amount
+    def deposit(self, balance):
+        if self.amount > 0:
+            self.balance = self.balance + balance
+            return 'Current balance: $%d' % self.balance
+        else:
+            return 'Machine is out of stock. Here is your $%d.' % balance
 
 class MissManners:
     """A container class that only forward messages that say please.
@@ -126,5 +171,13 @@ class MissManners:
     >>> fussy_three.ask('please __add__', 4)
     7
     """
-    "*** YOUR CODE HERE ***"
-
+    def __init__(self, contained_object):
+        self.contained_object = contained_object
+    def ask(self, *args):
+        words = args[0].split()
+        if words[0] != 'please':
+            return 'You must learn to say please first.'
+        elif len(words) > 2 or not hasattr(self.contained_object, words[1]):
+            return 'Thanks for asking, but I know not how to {0}'.format(' '.join(words[1:]))
+        else:
+            return getattr(self.contained_object, words[1])(*args[1:])
