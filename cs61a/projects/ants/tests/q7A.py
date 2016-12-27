@@ -9,14 +9,12 @@ test = {
           >>> # Testing NinjaAnt parameters
           >>> ninja = NinjaAnt()
           >>> ninja.armor
-          d89cf7c79d5a479b0f636734143ed5e6
-          # locked
+          1
           >>> NinjaAnt.food_cost
-          50ae32be3e31df6c59633df7fdfb3a72
-          # locked
+          6
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -28,14 +26,12 @@ test = {
           >>> p1.add_insect(ThrowerAnt())
           >>> bee.action(colony)  # attack ant, don't move past it
           >>> bee.place is p0
-          03456a09f22295a39ca84d133a26f63d
-          # locked
+          False
           >>> bee.place is p1
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -47,11 +43,10 @@ test = {
           >>> p1.add_insect(NinjaAnt())
           >>> bee.action(colony)  # shouldn't attack ant, move past it
           >>> bee.place is p0
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -63,11 +58,10 @@ test = {
           >>> test_place.add_insect(ninja)
           >>> ninja.action(colony)   # should strike all bees in place
           >>> [bee.armor for bee in test_place.bees]
-          7ba130373ce1098e546d938c59eedd24
-          # locked
+          [1, 1, 1]
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -79,11 +73,10 @@ test = {
           >>> test_place.add_insect(ninja)
           >>> ninja.action(colony)   # should strike all bees in place
           >>> len(test_place.bees)
-          73b94a1326ae2e803c3421016112207b
-          # locked
+          0
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -96,11 +89,10 @@ test = {
           >>> place.add_insect(buffNinja)
           >>> buffNinja.action(colony)
           >>> bee.armor
-          0562206f4949c480df34746f6392dbfb
-          # locked
+          400
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -109,11 +101,10 @@ test = {
           >>> colony.places["tunnel_0_0"].add_insect(ninja)
           >>> ninja.action(colony)
           >>> ninja.place.bees
-          a1218a9cb09e85b249f8863ced8a8dad
-          # locked
+          []
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         }
       ],
       'scored': True,

@@ -9,14 +9,12 @@ test = {
           >>> # Testing WallAnt parameters
           >>> wall = WallAnt()
           >>> wall.armor
-          c9452203eb0b0f0bd2454586a6c2fc5c
-          # locked
+          4
           >>> WallAnt.food_cost
-          c9452203eb0b0f0bd2454586a6c2fc5c
-          # locked
+          4
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -27,11 +25,10 @@ test = {
           >>> colony.places["tunnel_0_1"].add_insect(bee1)
           >>> bee1.action(colony)
           >>> bee1.place is wall.place
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         }
       ],
       'scored': True,

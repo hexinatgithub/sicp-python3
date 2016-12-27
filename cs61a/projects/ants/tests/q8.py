@@ -9,28 +9,24 @@ test = {
           >>> # Testing BodyguardAnt parameters
           >>> bodyguard = BodyguardAnt()
           >>> BodyguardAnt.food_cost
-          c9452203eb0b0f0bd2454586a6c2fc5c
-          # locked
+          4
           >>> bodyguard.armor
-          20d533d3e06345c8bd7072212867f2d1
-          # locked
+          2
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           >>> # Testing BodyguardAnt parameters
           >>> bodyguard = BodyguardAnt()
           >>> BodyguardAnt.food_cost
-          c9452203eb0b0f0bd2454586a6c2fc5c
-          # locked
+          4
           >>> bodyguard.armor
-          20d533d3e06345c8bd7072212867f2d1
-          # locked
+          2
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -39,7 +35,7 @@ test = {
           >>> bodyguard.action(colony)
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -55,62 +51,56 @@ test = {
           'code': r"""
           >>> # Testing BodyguardAnt container
           >>> bodyguard.container
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           >>> # Testing normal Ant container is false
           >>> test_ant.container
-          03456a09f22295a39ca84d133a26f63d
-          # locked
+          False
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           >>> # Testing bodyguard.can_contain returns True on non-containers
           >>> bodyguard.can_contain(test_ant)
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           >>> # Testing normal_ant.can_contain returns False
           >>> test_ant.can_contain(test_ant2)
-          03456a09f22295a39ca84d133a26f63d
-          # locked
+          False
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           >>> # Testing bodyguard.can_contain returns False on otherbodyguards
           >>> bodyguard.can_contain(bodyguard2)
-          03456a09f22295a39ca84d133a26f63d
-          # locked
+          False
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           >>> # Testing bodyguard.can_contain returns False once it is already containing
           >>> bodyguard.contain_ant(test_ant)
           >>> bodyguard.can_contain(test_ant2)
-          03456a09f22295a39ca84d133a26f63d
-          # locked
+          False
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -118,14 +108,12 @@ test = {
           >>> place.add_insect(bodyguard)
           >>> place.add_insect(test_ant)
           >>> bodyguard.ant is test_ant
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> place.ant is bodyguard
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -133,14 +121,12 @@ test = {
           >>> place.add_insect(test_ant)
           >>> place.add_insect(bodyguard)
           >>> bodyguard.ant is test_ant
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> place.ant is bodyguard
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -182,11 +168,10 @@ test = {
           >>> place.add_insect(test_ant)
           >>> bodyguard.reduce_armor(bodyguard.armor)
           >>> place.ant is test_ant
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -195,11 +180,10 @@ test = {
           >>> bodyguard.contain_ant(harvester)
           >>> bodyguard.action(colony)   # should do harvester's action
           >>> colony.food
-          81a7d27d1a4a958871bb97b545b871db
-          # locked
+          3
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -211,11 +195,10 @@ test = {
           >>> colony.places["tunnel_0_3"].add_insect(bee)
           >>> bodyguard.action(colony)
           >>> bee.armor
-          d89cf7c79d5a479b0f636734143ed5e6
-          # locked
+          1
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -227,11 +210,10 @@ test = {
           >>> place.add_insect(test_ant)
           >>> colony.remove_ant('tunnel_0_0')
           >>> place.ant is test_ant
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -246,11 +228,10 @@ test = {
           >>> place.add_insect(bodyguard)
           >>> place.ant.action(colony)
           >>> place.ant.ant.armor
-          0dd9b0bdd116232b5813e461237ca03d
-          # locked
+          9001
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -259,11 +240,10 @@ test = {
           >>> ant.container = True
           >>> ant.ant = None
           >>> ant.can_contain(ThrowerAnt())
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -272,11 +252,10 @@ test = {
           >>> mod_guard = BodyguardAnt()
           >>> mod_guard.container = False
           >>> bodyguard.can_contain(mod_guard)
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         }
       ],
       'scored': True,

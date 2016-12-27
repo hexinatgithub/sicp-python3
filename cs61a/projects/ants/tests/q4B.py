@@ -5,14 +5,14 @@ test = {
     {
       'cases': [
         {
-          'answer': 'ff4b29a10bb0da79aa8ae6ca275be201',
+          'answer': 'random_or_none, defined in ant.py',
           'choices': [
             'random_or_none, defined in ant.py',
             'random.random(), defined in the "random" module',
             'getitem, defined in the "operators" module'
           ],
           'hidden': False,
-          'locked': True,
+          'locked': False,
           'question': 'What function selects a random bee from a list of bees?'
         }
       ],
@@ -33,21 +33,17 @@ test = {
           >>> colony.places["tunnel_0_6"].add_insect(far_bee)
           >>> hive = colony.hive
           >>> thrower.nearest_bee(hive) is far_bee
-          03456a09f22295a39ca84d133a26f63d
-          # locked
+          False
           >>> thrower.nearest_bee(hive) is near_bee
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> thrower.action(colony)    # Attack!
           >>> near_bee.armor            # Should do 1 damage
-          d89cf7c79d5a479b0f636734143ed5e6
-          # locked
+          1
           >>> thrower.place is place             # Don't change self.place!
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -58,11 +54,10 @@ test = {
           >>> bee = Bee(2)
           >>> hive.add_insect(bee)       # adding a bee to the hive
           >>> thrower.nearest_bee(hive) is bee  # True or False?
-          03456a09f22295a39ca84d133a26f63d
-          # locked
+          False
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -72,15 +67,13 @@ test = {
           >>> near_bee = Bee(2)
           >>> colony.places["tunnel_0_0"].add_insect(near_bee)
           >>> thrower.nearest_bee(colony.hive) is near_bee   # True or False?
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> thrower.action(colony)   # Attack!
           >>> near_bee.armor           # should do 1 damage
-          d89cf7c79d5a479b0f636734143ed5e6
-          # locked
+          1
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""

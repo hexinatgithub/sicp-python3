@@ -1,1 +1,4 @@
 .ok_*
+.vscode/
+cs61a/projects/ants/tests/__pycache__/
+cs61a/projects/ants/__pycache__/

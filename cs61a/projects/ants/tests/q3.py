@@ -12,14 +12,12 @@ test = {
           >>> exit.entrance
           >>> place = Place('Test Place', exit)
           >>> place.exit is exit
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> exit.entrance is place
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""

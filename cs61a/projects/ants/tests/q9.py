@@ -14,13 +14,12 @@ test = {
           >>> p0.remove_insect(queen)
           >>> p1.remove_insect(imposter)
           >>> queen == p0.ant # Queen can't be removed
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> p1.ant      # Imposter should have been removed
           >>> queen.action(colony)
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -31,15 +30,13 @@ test = {
           >>> colony_queen.bees = [ants.Bee(1, colony_queen) for _ in range(3)]
           >>> ant_queen.bees = [ants.Bee(2, colony_queen) for _ in range(4)]
           >>> len(queen_place.bees)
-          7cd035adf49fc93a635b4e8bb2e28bd4
-          # locked
+          7
           >>> bee_armor = sum(bee.armor for bee in queen_place.bees)
           >>> bee_armor
-          cda504d90147ee5bc48005ab0b5bf152
-          # locked
+          11
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -107,15 +104,13 @@ test = {
           >>> colony.places['tunnel_0_2'].add_insect(bee)
           >>> queen.action(colony)
           >>> len(colony.queen.bees) <= 0 # If failed, Game ended before it should have
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> bee.action(colony)
           >>> len(colony.queen.bees) > 0 # Game should have ended
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -130,33 +125,26 @@ test = {
           
           >>> imposter.action(colony)
           >>> bee.armor   # Imposter should not damage bee
-          d5486b8375bc63d70b73f741cd83d712
-          # locked
+          10
           >>> ant.damage  # Imposter should not double damage
-          d89cf7c79d5a479b0f636734143ed5e6
-          # locked
+          1
           
           >>> queen.action(colony)
           >>> bee.armor   # Queen should damage bee
-          8b5f7651e8464d241749041812e40bfa
-          # locked
+          9
           >>> ant.damage  # Queen should double damage
-          20d533d3e06345c8bd7072212867f2d1
-          # locked
+          2
           >>> ant.action(colony)
           >>> bee.armor   # If failed, ThrowerAnt has incorrect damage
-          7cd035adf49fc93a635b4e8bb2e28bd4
-          # locked
+          7
           
           >>> queen.armor   # Long live the Queen
-          d89cf7c79d5a479b0f636734143ed5e6
-          # locked
+          1
           >>> imposter.armor  # Short-lived imposter
-          73b94a1326ae2e803c3421016112207b
-          # locked
+          0
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -220,16 +208,14 @@ test = {
           >>> queen.action(colony)
           >>> bee.action(colony)
           >>> len(colony.queen.bees) <= 0 # Game should not be over
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           >>> queen.action(colony)
           >>> bee.action(colony)
           >>> len(colony.queen.bees) > 0 # Game should have ended
-          c7a88a0ffd3aef026b98eef6e7557da3
-          # locked
+          True
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -246,11 +232,10 @@ test = {
           >>> colony.places['tunnel_0_4'].add_insect(bee)
           >>> ant.action(colony)
           >>> bee.armor # Queen should buff new ants
-          d89cf7c79d5a479b0f636734143ed5e6
-          # locked
+          1
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -262,11 +247,10 @@ test = {
           >>> colony.places['tunnel_0_4'].add_insect(bee)
           >>> queen.action(colony)
           >>> bee.armor # Queen should still hit the bee
-          20d533d3e06345c8bd7072212867f2d1
-          # locked
+          2
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         }
       ],
       'scored': True,

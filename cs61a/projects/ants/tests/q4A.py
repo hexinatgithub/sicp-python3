@@ -5,7 +5,7 @@ test = {
     {
       'cases': [
         {
-          'answer': 'd21f3a6075cc741a42d6d6ce12e5aed9',
+          'answer': 'Always; after adding the insect, reduce its armor to 0 if it is not watersafe',
           'choices': [
             'Always; after adding the insect, reduce its armor to 0 if it is not watersafe',
             'Only if the insect is watersafe; if it is not watersafe, reduce its armor to 0',
@@ -13,11 +13,11 @@ test = {
             'Never; no insect can be placed in a Water Place'
           ],
           'hidden': False,
-          'locked': True,
+          'locked': False,
           'question': 'When should an insect be added to a Water Place?'
         },
         {
-          'answer': 'fae228bbdefaf89611ef0df5ee7e8225',
+          'answer': 'class attribute',
           'choices': [
             'class attribute',
             'instance attribute',
@@ -25,11 +25,11 @@ test = {
             'global attribute'
           ],
           'hidden': False,
-          'locked': True,
+          'locked': False,
           'question': 'What type of attribute should "watersafe" be?'
         },
         {
-          'answer': '127cd87858e6c0a9f29f199fb2e2be0a',
+          'answer': 'reduce_armor, in the Insect class',
           'choices': [
             'reduce_armor, in the Insect class',
             'remove_insect, in the Place class',
@@ -38,7 +38,7 @@ test = {
             'remove_ant, in the AntColony class'
           ],
           'hidden': False,
-          'locked': True,
+          'locked': False,
           'question': r"""
           What method deals damage to an Insect and removes it from
           its Place? (You should use this method in your code.)
