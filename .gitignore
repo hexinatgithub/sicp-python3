@@ -3,3 +3,4 @@
 cs61a/projects/ants/tests/__pycache__/
 cs61a/projects/ants/__pycache__/
 cs61a/homework/hw06/hw06/__pycache__/
+*.pyc
