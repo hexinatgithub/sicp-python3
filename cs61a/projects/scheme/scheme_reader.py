@@ -110,15 +110,16 @@ def scheme_read(src):
     val = src.remove_front() # Get the first token
     if val == 'nil':
         # BEGIN PROBLEM 1
-        "*** REPLACE THIS LINE ***"
+        return nil
         # END PROBLEM 1
     elif val == '(':
         # BEGIN PROBLEM 1
-        "*** REPLACE THIS LINE ***"
+        return read_tail(src)
         # END PROBLEM 1
     elif val == "'":
         # BEGIN PROBLEM 7B
-        "*** REPLACE THIS LINE ***"
+        exp= scheme_read(src)
+        return Pair('quote', Pair(exp, nil))
         # END PROBLEM 7B
     elif val not in DELIMITERS:
         return val
@@ -140,15 +141,21 @@ def read_tail(src):
             raise SyntaxError('unexpected end of file')
         elif src.current() == ')':
             # BEGIN PROBLEM 1
-            "*** REPLACE THIS LINE ***"
+            src.remove_front()
+            return nil
             # END PROBLEM 1
         elif src.current() == '.':
             # BEGIN PROBLEM 2
-            "*** REPLACE THIS LINE ***"
+            src.remove_front()
+            last_elm = scheme_read(src)
+            if src.remove_front() != ')':
+                raise SyntaxError('expected ), unexpected token: {0}'.format(src.current()))
+            return last_elm
             # END PROBLEM 2
         else:
             # BEGIN PROBLEM 1
-            "*** REPLACE THIS LINE ***"
+            first, rest= scheme_read(src), read_tail(src)
+            return Pair(first, rest)
             # END PROBLEM 1
     except EOFError:
         raise SyntaxError('unexpected end of file')

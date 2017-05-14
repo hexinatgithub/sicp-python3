@@ -5,7 +5,7 @@ test = {
     {
       'cases': [
         {
-          'answer': 'fafe1301fe2e206817bdc9dd9e3a389d',
+          'answer': 'Pair(A, Pair(B, nil)), where: A is the symbol being bound, B is an expression whose value should be bound to A',
           'choices': [
             r"""
             Pair(A, Pair(B, nil)), where:
@@ -34,11 +34,11 @@ test = {
             """
           ],
           'hidden': False,
-          'locked': True,
+          'locked': False,
           'question': 'What is the structure of the expressions argument to do_define_form?'
         },
         {
-          'answer': 'b2dc2d8fc11300d5e68ab1e5dbaef0c4',
+          'answer': 'define',
           'choices': [
             'make_child_frame',
             'define',
@@ -46,7 +46,7 @@ test = {
             'bindings'
           ],
           'hidden': False,
-          'locked': True,
+          'locked': False,
           'question': r"""
           What method of a Frame instance will bind
           a value to a symbol in that frame?
@@ -61,35 +61,28 @@ test = {
         {
           'code': r"""
           scm> (define size 2)
-          e01d2409c829d607dce70d43078295d4
-          # locked
+          size
           scm> size
-          4b7283d4dfa392633549336acb032de7
-          # locked
+          2
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
           scm> (define x (+ 2 3))
-          c55ea5b1bca40acd76b8c213f8a08f8b
-          # locked
+          x
           scm> x
-          39dba75757e21a295c7803a12e1e5877
-          # locked
+          5
           scm> (define x (+ 2 7))
-          c55ea5b1bca40acd76b8c213f8a08f8b
-          # locked
+          x
           scm> x
-          9cc890fba2180e73142276346c5369b9
-          # locked
+          9
           scm> (eval (define tau 6.28))
-          b3ae0b39b59664b3f22944e323d71e42
-          # locked
+          6.28
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         }
       ],
       'scored': True,

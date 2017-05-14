@@ -8,27 +8,22 @@ test = {
           'code': r"""
           >>> expr = read_line('(+ 2 2)')
           >>> expr
-          ea71d6537edb33a861db67994c99d0c1
-          # locked
+          Pair('+', Pair(2, Pair(2, nil)))
           >>> scheme_eval(expr, create_global_frame()) # Type SchemeError if you think this errors
-          5dc34dbe25d53109ac62b4184b75a40f
-          # locked
+          4
           >>> expr = read_line('(+ (+ 2 2) (+ 1 3) (* 1 4))')
           >>> scheme_eval(expr, create_global_frame()) # Type SchemeError if you think this errors
-          dfa6909c6aed8fc69176ff06e8383ec2
-          # locked
+          12
           >>> expr = read_line('(yolo)')
           >>> scheme_eval(expr, create_global_frame()) # Type SchemeError if you think this errors
-          0b51df1e150843e094f5a67945b0c704
-          # locked
+          SchemeError
           >>> expr = read_line('(+ (+ 2 2) (+ 1 3) (* 1 4))')
           >>> proc = scheme_eval(expr.first, create_global_frame())
           >>> proc.eval_call(expr.second, create_global_frame()) # Type SchemeError if you think this errors
-          dfa6909c6aed8fc69176ff06e8383ec2
-          # locked
+          12
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         }
       ],
       'scored': True,
@@ -44,20 +39,16 @@ test = {
         {
           'code': r"""
           scm> (+ 2 3) ; Type SchemeError if you think this errors
-          39dba75757e21a295c7803a12e1e5877
-          # locked
+          5
           scm> (* (+ 3 2) (+ 1 7)) ; Type SchemeError if you think this errors
-          bc68e7f6089e3fb3f82e50eab363155b
-          # locked
+          40
           scm> (1 2) ; Type SchemeError if you think this errors
-          0b51df1e150843e094f5a67945b0c704
-          # locked
+          SchemeError
           scm> (1 (print 0)) ; check_procedure should be called before operands are evaluated
-          0b51df1e150843e094f5a67945b0c704
-          # locked
+          SchemeError
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""

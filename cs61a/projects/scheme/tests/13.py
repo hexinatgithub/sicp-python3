@@ -7,39 +7,20 @@ test = {
         {
           'code': r"""
           scm> (and)
-          a48ad7c6cb9d8be0928e7032acab2fdd
-          # locked
-          # choice: True
-          # choice: False
-          # choice: SchemeError
+          True
           scm> (and 1 False)
-          0840a73cb74e45d8ad7cd102c34eac98
-          # locked
-          # choice: 1
-          # choice: True
-          # choice: False
+          False
           scm> (and (+ 1 1) 1)
-          1d6ef7880cd9b59b64a1f4e1a1e35a12
-          # locked
-          # choice: 2
-          # choice: 1
-          # choice: (+ 1 1)
-          # choice: True
+          1
           scm> (and False 5)
-          0840a73cb74e45d8ad7cd102c34eac98
-          # locked
-          # choice: 5
-          # choice: True
-          # choice: False
+          False
           scm> (and 4 5 (+ 3 3))
-          81465e2dabdcdea0628897014da02da9
-          # locked
+          6
           scm> (and True False 42 (/ 1 0))
-          0840a73cb74e45d8ad7cd102c34eac98
-          # locked
+          False
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
@@ -66,45 +47,24 @@ test = {
         {
           'code': r"""
           scm> (or)
-          0840a73cb74e45d8ad7cd102c34eac98
-          # locked
-          # choice: True
-          # choice: False
-          # choice: SchemeError
+          False
           scm> (or (+ 1 1))
-          4b7283d4dfa392633549336acb032de7
-          # locked
-          # choice: 2
-          # choice: True
-          # choice: False
-          # choice: (+ 1 1)
+          2
           scm> (or False)
-          0840a73cb74e45d8ad7cd102c34eac98
-          # locked
-          # choice: True
-          # choice: False
-          # choice: SchemeError
+          False
           scm> (define (t) True)
-          1df7257f69b999dcc606ccacfbfae648
-          # locked
+          t
           scm> (or (t) 3)
-          a48ad7c6cb9d8be0928e7032acab2fdd
-          # locked
-          # choice: 3
-          # choice: True
-          # choice: False
+          True
           scm> (or 5 2 1)
-          39dba75757e21a295c7803a12e1e5877
-          # locked
+          5
           scm> (or False (- 1 1) 1)
-          fe0c8b4127bfc1ab429bd306a95eda1e
-          # locked
+          0
           scm> (or 4 True (/ 1 0))
-          5dc34dbe25d53109ac62b4184b75a40f
-          # locked
+          4
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""

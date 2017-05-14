@@ -7,22 +7,18 @@ test = {
         {
           'code': r"""
           scm> (let-to-lambda 1)
-          1d6ef7880cd9b59b64a1f4e1a1e35a12
-          # locked
+          1
           scm> (let-to-lambda 'a)
-          771dfeac5012b5d36a606ee5b8f55c7f
-          # locked
+          a
           scm> (let-to-lambda '(+ 1 2))
-          7dffb54d077c0d96ba862301c9b369d2
-          # locked
+          (+ 1 2)
           scm> (let-to-lambda '(let ((a 1)
           ....                 (b 2))
           ....                (+ a b)))
-          6d9be4ba540c7e358e06767ffa2ff5fb
-          # locked
+          ((lambda (a b) (+ a b)) 1 2)
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""

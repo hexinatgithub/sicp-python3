@@ -7,11 +7,10 @@ test = {
         {
           'code': r"""
           scm> (lambda (x y) (+ x y))
-          d579a305762000c8ae036c510fb2baf6
-          # locked
+          (lambda (x y) (+ x y))
           """,
           'hidden': False,
-          'locked': True
+          'locked': False
         },
         {
           'code': r"""
