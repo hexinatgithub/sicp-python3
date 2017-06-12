@@ -1,0 +1,27 @@
+{
+    "name": "Lab 11",
+    "endpoint": "cal/cs61a/sp17/lab11",
+    "src": [
+        "lab11.py",
+        "lab11_extra.py"
+    ],
+    "tests": {
+        "tests/sets.py": "ok_test",
+        "lab11.py": "doctest",
+        "lab11_extra.py": "doctest"
+    },
+    "default_tests": [
+        "interleave",
+        "add_streams",
+        "sets",
+        "find_duplicates"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}
