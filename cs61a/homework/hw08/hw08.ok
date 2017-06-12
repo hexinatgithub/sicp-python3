@@ -1,0 +1,36 @@
+{
+    "name": "Homework 8",
+    "endpoint": "cal/cs61a/sp17/hw08",
+    "src": [
+        "hw08.py",
+        "hw08.scm"
+    ],
+    "tests": {
+        "tests/substitute.py": "ok_test",
+        "tests/sub-all.py": "ok_test",
+        "tests/derive-sum.py": "ok_test",
+        "tests/derive-product.py": "ok_test",
+        "tests/make-exp.py": "ok_test",
+        "tests/derive-exp.py": "ok_test",
+        "hw08.py": "doctest"
+    },
+    "default_tests": [
+        "missing_val",
+        "find_duplicates_k",
+        "substitute",
+        "sub-all",
+        "scale_stream",
+        "merge",
+        "make_s",
+        "make_random_stream"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "collaborate",
+        "backup"
+    ]
+}
