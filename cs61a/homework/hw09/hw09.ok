@@ -1,0 +1,34 @@
+{
+    "name": "Homework 9",
+    "endpoint": "cal/cs61a/sp17/hw09",
+    "src": [
+        "hw09.sql"
+    ],
+    "tests": {
+        "tests/small.py": "ok_test",
+        "tests/parent-height.py": "ok_test",
+        "tests/size-siblings.py": "ok_test",
+        "tests/stack.py": "ok_test",
+        "tests/relations.py": "ok_test",
+        "tests/divisors.py": "ok_test",
+        "tests/primes.py": "ok_test"
+    },
+    "default_tests": [
+        "small",
+        "parent-height",
+        "size-siblings",
+        "stack",
+        "relations",
+        "divisors",
+        "primes"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "collaborate",
+        "backup"
+    ]
+}
